@@ -1,6 +1,15 @@
 html, body {
     margin: 10;
     padding: 10;
+    text-align: center;
+    background: burlywood;
+    color: brown;
+}
+
+h1 {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: brown;
+    font-size: 64px;
 }
 
 .grid {
@@ -9,6 +18,7 @@ html, body {
     width: 200px;
     height: 200px;
     border: solid 2px black;
+    margin: auto;
 }
 
 .square {
@@ -21,5 +31,5 @@ html, body {
 }
 
 .apple {
-    background-color: blue;
+    background-color: red;
 }

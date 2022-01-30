@@ -109,19 +109,19 @@ generateApple()
 // 40 is for the down arrow
 
 function control(e) {
-    if (e.key === 39) {
+    if (e.key === "ArrowRight") {
         console.log('right pressed')
         direction = 1
-    } else if (e.key === 38) {
+    } else if (e.key === "ArrowUp") {
         console.log('up pressed')
         direction = -width
-    } else if (e.key === 37) {
+    } else if (e.key === "ArrowLeft") {
         console.log('left pressed')
         direction = -1
-    } else if (e.key === 40) {
+    } else if (e.key === "ArrowDown") {
         console.log('down pressed')
         direction = +width
     }
 }
-document.addEventListener('keyup', control)
+document.addEventListener('keydown', control)
 startButton.addEventListener('click', startGame)
